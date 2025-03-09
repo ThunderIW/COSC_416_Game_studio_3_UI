@@ -40,5 +40,9 @@ public class InputManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P)) { 
             OnSettingMenu?.Invoke();
         }
+        if (GameManager.Instance.IsSettingsMenuActive)
+        {
+            return;
+        }
     }
 }
