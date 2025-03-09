@@ -1,5 +1,5 @@
 
-<h1>Third Person Platformer 🎮</h1>  
+<h1>Third Person Platformer(Updated with new UI elements) 🎮</h1>  
 
 This project is a **Unity-based Third-Person Platformer** where the player moves in the **direction of the camera**, jumps across platforms, and collects coins to increase their score.
 
