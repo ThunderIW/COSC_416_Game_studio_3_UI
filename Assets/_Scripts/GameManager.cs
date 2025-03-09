@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : SingletonMonoBehavior<GameManager>
@@ -23,8 +24,8 @@ public class GameManager : SingletonMonoBehavior<GameManager>
 
     }
 
-    private void ToggleSettingsMenu() { 
-        if(isSettingsMenuActive)
+    private void ToggleSettingsMenu() {
+        if (isSettingsMenuActive)
         {
             DisableSettingsMenu();
         }
@@ -43,7 +44,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         isSettingsMenuActive = true;
     }
 
-    private void DisableSettingsMenu()
+    public void DisableSettingsMenu()
     {
         Time.timeScale = 1f;
         settingsMenu.SetActive(false);
@@ -52,6 +53,15 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         isSettingsMenuActive = false;
 
     }
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false; // Stops Play Mode in Unity Editor
+#else
+            Application.Quit(); // Closes the game in a built application
+#endif
+    }
+
 
 
     public void IncreaseScore()
