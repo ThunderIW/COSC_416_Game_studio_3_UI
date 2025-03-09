@@ -1,32 +1,50 @@
-# Third Person Platformer
 
-A simple third person character controller in Unity
+<h1>Third Person Platformer(Updated with new UI elements) 🎮</h1>  
 
-## Demo
-
-https://github.com/user-attachments/assets/91485280-b86b-4c82-ac11-2a5107730e94
-
-## Cloning & Setting Up the Project
-
-1. Ensure you have
-	- **Unity Hub** (Download: [Unity Hub](https://unity.com/download))
-	- **Unity Version** (6000.0.31f1)
-	- **Git** ([Download Git](https://git-scm.com/)) or **Github Desktop** ([Download Github Desktop](https://desktop.github.com/download/))
-2. Clone the project via [Git](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=cli) or [Github Desktop](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=desktop)
-3. Open **Unity Hub**
-4. Click **"Open"** and select the cloned project folder (with Assets, ProjectSettings, Packages)
-
-## Features
-
-- Third Person Camera
-- Move around with WASD
-- Jump, Double Jump with Space
-- Dash with Shift
-- Collect Coins by moving over them
-- Score Counter on the top right
-
-## Credits
-
-Uses coin model from [Quaternius](https://quaternius.com/) (Sourced from [Poly Pizza](https://poly.pizza/m/QHZtj94fvh))
+This project is a **Unity-based Third-Person Platformer** where the player moves in the **direction of the camera**, jumps across platforms, and collects coins to increase their score.
 
 
+## Features ✨  
+
+- 🎥 **Camera-Based Movement**: Player moves in the direction of the camera using **WASD**.  
+- 🏃 **Platformer Mechanics**: Smooth movement and jumping system for navigating obstacles.  
+- 💰 **Coin Collection**: Coins are placed on platforms and disappear when collected.  
+- 🏆 **UI Score Tracking**: Score updates dynamically when coins are collected.  
+- 🚀 **Double-Jump**: Player can perform a **double jump** to reach higher platforms if needed.  
+
+## Controls 🎮  
+
+| Key      | Action                       |
+|----------|------------------------------|
+| `WASD`   | Move character               |
+| `Space`  | Jump / Double Jump           |
+| `Mouse`  | Rotate Camera                |
+|`left SHIFT` | Dash                       |
+
+## Environment & Gameplay 🌍  
+
+The game consists of a **large flat plane** with obstacles:  
+
+| Object       | Functionality                                  |
+|-------------|----------------------------------------------|
+| **Platforms** | Boxes placed to create jumping challenges  |
+| **Coins**     | Collectibles placed on platforms; when player collects then coin sound effect  is triggered  |
+| **Boundaries** | Invisible walls prevent the player from falling off |
+
+## Bonus Features 🌟  
+- 🎯 **Well-Tuned Movement** for a more **responsive** platforming experience  
+- 🏗 **Single Responsibility Code Design** *(Each feature is modular and structured well)*  
+
+## Development 🛠  
+
+- 🎬 **Third-Person Free-Look Camera**: Uses **Cinemachine** for smooth camera control.  
+- 🎮 **GameManager Implementation**: This efficiently handles scoring and coin logic.  
+
+## Video Demo 📹  
+
+
+## Installation 🏗  
+
+1. Clone this repository:  
+   ```sh
+   git clone https://github.com/ThunderIW/COSC_416_Game_studio_3_UI
